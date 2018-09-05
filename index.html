@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>123456</title>
+<script>
+	function color(str) {
+		document.body.style.backgroundColor = str;
+	}
+</script>
+	</head>
+	<body>
+		<p id="a">此网页显示</p>
+	<input type="button" name="redBtutton" id="redBtutton" value="黄色" onclick="chgColor('yellow')" />	
+	<input type="button" name="redBtutton" id="redBtutton" value="红色" onclick="chgColor('red')" />
+<input type="button" name="redBtutton" id="redBtutton" value="绿色" onclick="chgColor('green')" />
+<input type="button" name="redBtutton" id="redBtutton" value="蓝色" onclick="chgColor('blue')" />
+<input type="color" name="" id="chgColor" value="#ff0000" onchange="chgRandomColor()" />
+<script type="text/javascript">
+	function chgColor(color){
+		document.body.style.backgroundColor=color;
+	}
+	function chgRandomColor(){
+		var chgColor=document.getElementById("chgColor");
+		document.body.style.backgroundColor=chgColor.value;
+	}
+</script>
+</body>
+</html>
